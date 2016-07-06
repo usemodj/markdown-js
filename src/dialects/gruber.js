@@ -597,7 +597,7 @@ define(['../markdown_helpers', './dialect_helpers', '../parser'], function (Mark
 
         if ( ( m = text.match( /^\[\[([^\]]+)\]\]/ ) ) !== null ) {
           if ( m[1] )
-            return [ m[0].length, [ "link", { href: "http://usemodj.com/wiki/" + m[1] }, m[1] ] ];
+            return [ m[0].length, [ "link", { href: "/wiki/" + m[1] }, m[1] ] ];
         }
 
         return [2, "[[" ];
