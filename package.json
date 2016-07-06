@@ -18,12 +18,12 @@
     "Robin Ward <robin.ward@gmail.com> (http://eviltrout.com)"
   ],
   "bugs": {
-    "url": "https://github.com/evilstreak/markdown-js/issues"
+    "url": "https://github.com/usemodj/markdown-js/issues"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/evilstreak/markdown-js.git"
+    "url": "git://github.com/usemodj/markdown-js.git"
   },
   "main": "./lib/index.js",
   "bin": {
