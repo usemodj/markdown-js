@@ -592,6 +592,17 @@ define(['../markdown_helpers', './dialect_helpers', '../parser'], function (Mark
         return [ 2, "![" ];
       },
 
+      "[[": function linkWikiPage(text){
+        var m;
+
+        if ( ( m = text.match( /^\[\[([^\]]+)\]\]/ ) ) !== null ) {
+          if ( m[1] )
+            return [ m[0].length, [ "link", { href: "http://usemodj.com/wiki/" + m[1] }, m[1] ] ];
+        }
+
+        return [2, "[[" ];
+      },
+
       "[": function link( text ) {
 
         var open = 1;
